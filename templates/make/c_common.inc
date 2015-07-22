@@ -14,6 +14,9 @@ BD_TEMPLATES = templates/dhmake/
 all:
 	-for d in $(DIRS); do (cd $$d; if [ -f *.pro ]; then qmake; fi; $(MAKE) $(MFLAGS)); done
 
+all-win:
+	-for d in $(DIRS_WIN); do (cd $$d; if [ -f *.pro ]; then qmake; fi; $(MAKE) $(MFLAGS)); done
+
 clean:
 	-for d in $(DIRS); do (cd $$d; $(MAKE) clean; if [ -f *.pro ]; then $(RM) Makefile $$d; fi ); done
 

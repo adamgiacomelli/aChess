@@ -16,4 +16,3 @@ To compile in windows XP (tested in Windows XP professional SP3 version 2002) yo
 -Qt SDK 4.7.0 for windows
 
 Mount root directory in MinGW shell and run "make all" in it, open ChessQMLui.pro in QT Creator and set build directory to its directory before compiling.
-
